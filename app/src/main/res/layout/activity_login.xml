@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Views.Activities.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:background="@drawable/image_bag"
+        android:padding="25dp"
+        android:src="@drawable/ic_chat"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.1"
+        android:padding="7sp"
+        android:text="Kotlin Chat"
+        android:textColor="@color/white"
+        android:textSize="31sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:padding="3sp"
+        android:text="Smile ! You are a new User"
+        android:textAlignment="center"
+        android:textColor="#FF9800"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:fontFamily="sans-serif-medium"
+        android:padding="5sp"
+        android:text="Login to Become New User"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="325sp"
+        android:layout_height="57sp"
+        android:layout_marginTop="16sp"
+        android:background="@drawable/edit_text_bag"
+        android:drawableStart="@drawable/ic_mail"
+        android:drawablePadding="15sp"
+        android:elevation="10sp"
+        android:hint="Enter your E_mail"
+        android:inputType="textEmailAddress"
+        android:paddingStart="15sp"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:id="@+id/login_pwd"
+        android:layout_width="325sp"
+        android:layout_height="57sp"
+        android:layout_marginTop="16sp"
+        android:background="@drawable/edittext"
+        android:drawableStart="@drawable/lock"
+        android:drawablePadding="15sp"
+        android:elevation="10sp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="15sp" />
+
+    <TextView
+        android:id="@+id/forgot_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="8sp"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Forgot Password ??"
+        android:textColor="#FFEB3B"
+        android:textSize="15sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_btn"
+        android:layout_width="152sp"
+        android:layout_height="57sp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/main_btn"
+        android:elevation="10sp"
+        android:fontFamily="sans-serif-medium"
+        android:text="LogIn"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:foregroundGravity="center_vertical"
+        android:indeterminateTint="@color/white"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/new_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:fontFamily="sans-serif-medium"
+        android:text="New User? Register here"
+        android:textColor="#FFEB3B"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

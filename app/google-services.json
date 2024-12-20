@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "374856124960",
+    "project_id": "kotlin-chatting-app-82734",
+    "storage_bucket": "kotlin-chatting-app-82734.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374856124960:android:5943abd822596a7bbaca45",
+        "android_client_info": {
+          "package_name": "com.sca.kotlinchattingapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf6COrG52N7k9OOYo6IBEhOCvETHBwTHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

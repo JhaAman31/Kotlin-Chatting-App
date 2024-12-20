@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context=".Views.Fragments.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_img"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                app:civ_border_width="2dp"
+                android:src="@drawable/ic_profile_circle"
+               />
+
+
+            <EditText
+                android:id="@+id/profile_name"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/edittext"
+                android:elevation="1dp"
+                android:hint="User Name"
+                android:enabled="false"
+                android:inputType="text"
+                android:padding="15sp" />
+
+
+            <EditText
+                android:id="@+id/profile_about"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginVertical="7dp"
+                android:background="@drawable/edittext"
+                android:elevation="1dp"
+                android:enabled="false"
+                android:hint="About"
+                android:inputType="text"
+                android:padding="15sp" />
+
+            <EditText
+                android:id="@+id/profile_phone"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginVertical="7dp"
+                android:background="@drawable/edittext"
+                android:elevation="1dp"
+                android:enabled="false"
+                android:hint="Phone No."
+                android:inputType="textEmailAddress"
+                android:padding="15sp" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:visibility="gone"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:indeterminateTint="@color/app_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:gravity="end">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/edit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/edit_btn"
+                android:text="Edit"
+                android:textAllCaps="false" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/update_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/main_btn"
+                android:text="Update"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="sans-serif-medium"
+                android:padding="5dp"
+                android:text="App Info"
+                android:textColor="@color/app_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="22dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif-light"
+                android:inputType="textMultiLine|textLongMessage"
+                android:letterSpacing="0.2"
+                android:padding="5dp"
+                android:textSize="12sp"
+                android:text="        K-Chat is a feature-rich chatting application that allows users to communicate with one another through dynamic and engaging conversations. The app integrates Firebase for real-time messaging and storage, offering smooth functionality for chats,calls, statuses, and profiles. It leverages RecyclerView to display recent chats and allows users to seamlessly switch between different sections like Chats, Calls, Status, and Profile through a bottom navigation bar.
+\n        With advanced features like fetching and displaying user-specific data, including profile images and last message times, MChat aims to offer a user-friendly and responsive interface. The app also uses Firestore to manage chat room data, enabling real-time updates and personalized experiences. K-Chat's design is tailored to be modern and visually appealing, incorporating advanced UI elements like floating action buttons and material design principles for an intuitive user experience."
+
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/logout_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/log_out_bag"
+            android:padding="10dp"
+            android:text="Log out"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+</ScrollView>
