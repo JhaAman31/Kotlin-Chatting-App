@@ -3,8 +3,8 @@ package com.sca.kotlinchattingapp.ViewModels
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.sca.kotlinchattingapp.Models.Repositories.ChatsRepository
-import com.sca.kotlinchattingapp.Models.UserModel
+import com.sca.kotlinchattingapp.UserChats.ChatsRepository
+import com.sca.kotlinchattingapp.UserChats.UserModel
 
 class ChatViewModel : ViewModel() {
     private val userRepository = ChatsRepository()

@@ -10,7 +10,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.bumptech.glide.Glide
 import com.github.dhaval2404.imagepicker.ImagePicker
-import com.sca.kotlinchattingapp.Models.UserModel
+import com.sca.kotlinchattingapp.UserChats.UserModel
 import com.sca.kotlinchattingapp.R
 import com.sca.kotlinchattingapp.Utils.FirebaseUtils
 import com.sca.kotlinchattingapp.Views.MainActivity

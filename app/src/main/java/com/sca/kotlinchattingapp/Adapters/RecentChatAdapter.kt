@@ -10,7 +10,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
-import com.sca.kotlinchattingapp.Models.UserModel
+import com.sca.kotlinchattingapp.UserChats.UserModel
 import com.sca.kotlinchattingapp.R
 import com.sca.kotlinchattingapp.Utils.FirebaseUtils
 import com.sca.kotlinchattingapp.Views.Activities.ChattingActivity
@@ -48,8 +48,6 @@ class RecentChatAdapter(
             .placeholder(R.drawable.ic_profile_circle)
             .into(holder.userImg)
 
-//        holder.lastMsg.text = user.about ?: "Hey there! I am using K-chat"
-//        holder.lastMsgTime.text = ""
 
 
         holder.itemView.setOnClickListener {

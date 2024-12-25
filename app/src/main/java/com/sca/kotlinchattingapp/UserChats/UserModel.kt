@@ -1,4 +1,4 @@
-package com.sca.kotlinchattingapp.Models
+package com.sca.kotlinchattingapp.UserChats
 
 import com.google.firebase.Timestamp
 

@@ -3,7 +3,7 @@ package com.sca.kotlinchattingapp.ViewModels
 
 import androidx.lifecycle.ViewModel
 import com.sca.kotlinchattingapp.Models.Repositories.AuthRepository
-import com.sca.kotlinchattingapp.Models.UserModel
+import com.sca.kotlinchattingapp.UserChats.UserModel
 
 class AuthViewModel : ViewModel() {
 

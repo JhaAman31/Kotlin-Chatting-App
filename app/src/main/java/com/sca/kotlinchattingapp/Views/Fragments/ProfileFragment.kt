@@ -13,10 +13,9 @@ import androidx.activity.result.ActivityResult
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
 import com.bumptech.glide.Glide
 import com.sca.kotlinchattingapp.Models.Repositories.AuthRepository
-import com.sca.kotlinchattingapp.Models.UserModel
+import com.sca.kotlinchattingapp.UserChats.UserModel
 import com.sca.kotlinchattingapp.R
 import com.sca.kotlinchattingapp.Utils.FirebaseUtils
 import com.sca.kotlinchattingapp.Views.Activities.LoginActivity

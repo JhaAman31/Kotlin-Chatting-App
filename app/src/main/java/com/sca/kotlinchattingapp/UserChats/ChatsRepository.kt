@@ -1,6 +1,5 @@
-package com.sca.kotlinchattingapp.Models.Repositories
+package com.sca.kotlinchattingapp.UserChats
 
-import com.sca.kotlinchattingapp.Models.UserModel
 import com.sca.kotlinchattingapp.Utils.FirebaseUtils
 
 

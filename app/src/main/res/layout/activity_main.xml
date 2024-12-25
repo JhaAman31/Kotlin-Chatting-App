@@ -13,43 +13,59 @@
         android:layout_height="wrap_content"
         android:background="@color/app_color">
 
-        <ImageView
-            android:id="@+id/app_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/image_bag"
-            android:padding="8dp"
-            android:src="@drawable/ic_chat"
-            app:tint="@color/black" />
+<!--        <ImageView-->
+<!--            android:id="@+id/app_btn"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:background="@drawable/image_bag"-->
+<!--            android:padding="8dp"-->
+<!--            android:src="@drawable/ic_chat"-->
+<!--            app:tint="@color/black" />-->
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/aclonica"
             android:letterSpacing="0.2"
-            android:text="Kotlin Chat"
+            android:text="Kotlin Chat Module"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />
     </Toolbar>
 
-
-    <FrameLayout
-        android:id="@+id/fragment_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/bottom_navigation"
-        android:layout_below="@id/tool_bar" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="@color/app_color"
-        app:itemIconTint="@color/white"
-        app:itemTextColor="@color/white"
-        app:menu="@menu/bottom_nav_menu" />
+        android:layout_below="@id/tool_bar"
+        app:tabTextColor="@color/app_color"
+        android:background="@color/white"
+        />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_Pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="2dp"
+        android:background="@color/white"
+        android:layout_below="@id/tab_layout"/>
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/fragment_container"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_above="@id/bottom_navigation"-->
+<!--        android:layout_below="@id/tool_bar" />-->
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/bottom_navigation"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:background="@color/app_color"-->
+<!--        app:itemIconTint="@color/white"-->
+<!--        app:itemTextColor="@color/white"-->
+<!--        app:menu="@menu/bottom_nav_menu" />-->
 
 </RelativeLayout>

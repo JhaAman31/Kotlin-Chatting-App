@@ -3,7 +3,7 @@ package com.sca.kotlinchattingapp.Models.Repositories
 import com.google.firebase.Timestamp
 import com.sca.kotlinchattingapp.Utils.FirebaseUtils
 import com.sca.kotlinchattingapp.Utils.FirebaseUtils.auth
-import com.sca.kotlinchattingapp.Models.UserModel
+import com.sca.kotlinchattingapp.UserChats.UserModel
 
 class AuthRepository {
 
@@ -63,9 +63,9 @@ class AuthRepository {
     }
 // For getting current user info
      fun getSelfInfo(
-        uid: String,
-        onSuccess: (UserModel) -> Unit,
-        onFailure: (Exception) -> Unit
+    uid: String,
+    onSuccess: (UserModel) -> Unit,
+    onFailure: (Exception) -> Unit
     ) {
         FirebaseUtils.usersReference(uid).get().addOnSuccessListener { docs ->
             val userData = docs.toObject(UserModel::class.java)
@@ -77,9 +77,9 @@ class AuthRepository {
     }
 
      fun otherUserInfo(
-        uid: String,
-        onSuccess: (UserModel) -> Unit,
-        onFailure: (Exception) -> Unit
+         uid: String,
+         onSuccess: (UserModel) -> Unit,
+         onFailure: (Exception) -> Unit
     ) {
         FirebaseUtils.usersReference(uid).get().addOnSuccessListener { docs ->
             val userData = docs.toObject(UserModel::class.java)
